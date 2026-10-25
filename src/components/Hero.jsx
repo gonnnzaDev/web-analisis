@@ -44,6 +44,9 @@ export default function Hero() {
         <Scene3D />
       </Suspense>
 
+      {/* Velo central para que el texto respire sobre la escena 3D */}
+      <div className="pointer-events-none absolute inset-0 z-[2] bg-[radial-gradient(ellipse_55%_50%_at_50%_50%,rgba(5,5,11,0.72),transparent_78%)]" />
+
       {/* Contenido */}
       <div className="corners relative z-10 mx-4 max-w-3xl px-6 py-12 text-center sm:px-10">
         <p className="font-pixel text-[9px] tracking-widest text-gold sm:text-[10px]">
